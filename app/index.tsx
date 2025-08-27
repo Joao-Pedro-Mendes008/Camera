@@ -1,26 +1,11 @@
+import { ThemedView } from "@/components/ThemedView";
+import { Redirect, useRouter } from "expo-router";
 import * as React from "react";
-import {
-    StyleSheet,
-    Platform,
-    View,
-    SafeAreaView,
-    StatusBar,
-    TouchableHighlight,
-    Linking,
-    Text,
-} from "react-native";
 import {
     Camera,
     useCameraDevice,
-    useCameraDevices,
-    useCameraPermission,
+    useCameraPermission
 } from "react-native-vision-camera";
-import { Redirect, useRouter } from "expo-router";
-import { ThemedText } from "@/components/ThemedText";
-import ObscuraButton from "@/components/ObscuraButton";
-import { FontAwesome5 } from "@expo/vector-icons";
-import { BlurView } from "expo-blur";
-import ExpousreControls from "@/components/ExposureControls";
 
 export default function HomeScreen() {
     const { hasPermission } = useCameraPermission();
@@ -33,5 +18,5 @@ export default function HomeScreen() {
     if (redirectToPermissions) return <Redirect href={"/permissions"} />;
     if (!device) return <></>;
 
-    return <ThemedText>oi</ThemedText>;
+    return <ThemedView>oi</ThemedView>;
 }

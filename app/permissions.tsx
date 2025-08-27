@@ -1,9 +1,10 @@
-import { Stack } from "expo-router";
 import * as React from "react";
 import {
   StyleSheet,
   View,
 } from "react-native";
+
+import { Stack } from "expo-router";
 
 import * as ExpoMediaLibrary from "expo-media-library";
 
@@ -34,7 +35,7 @@ export default function PermissionScreen() {
         <View style={styles.row}>
           <Ionicons name="lock-closed-outline" />
 
-          <View />
+          </View>
       </ThemedView>
     </>
   );
