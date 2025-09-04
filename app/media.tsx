@@ -3,7 +3,7 @@
 //Stack: manipula ações da tela - não estamos utilizando diretamente
 //useLocalSearchParams: pega parâmetros passados pela rota (ex.: ?media=...&type=...)
 //useRouter: permite navegação programática (ex.: voltar, avançar, etc.)
-import { Link, Stack, useLocalSearchParams, useRouter } from "expo-router";
+import { Link, useLocalSearchParams, useRouter } from "expo-router";
 
 //Importa componentes do React Native
 //Alert: exibe uma caixa de diálogo (popup)
@@ -52,7 +52,7 @@ export default function MediaScreen() {
             {/*Botão customizado no componente para salvar a midia na galeria*/}
             <ObscuraButton
                 title="Salvar na galeria"
-                constainerStyle={{ alignSelf: "center" }}
+                containerStyle={{ alignSelf: "center" }}
                 onPress={async () => {
                     //salva a mídia no dispositivo
                     saveToLibraryAsync(media as string);
