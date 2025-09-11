@@ -6,5 +6,6 @@
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 13,
     "editor.fontLigatures": "explicit"
-  }
+  },
+  "editor.fontFamily": "'JetBrains Mono', 'monospace'"
 }
